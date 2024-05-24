@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            border-top:  5px solid green;
+            border-bottom:  5px dashed pink;
+            border-left: 5px dotted aqua;
+            border-right: 5px solid orange;
+        }
+        .nav{
+            width: 300px;
+            height: 200px;
+            /* 层叠行，下面的覆盖上面的 */
+            border:5px dashed blue ;
+            border-top: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <div class="nav"></div>
+</body>
+</html>

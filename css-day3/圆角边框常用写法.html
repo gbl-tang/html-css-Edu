@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yuanxing {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 50%就是宽度和高度的一半 画出来的就是圆形 */
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .juxing {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            /* 矩形就是设置高的一半像素即可 */
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+        /* 设置不同的圆角，有四个值，左上 右上 右下 左下 */
+        .radious{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border-radius: 10px 30px 50px 70px;
+            /* 如果border-radius后面只有两个数字，那么指的是：第一个数字：左上 右下  第二个数字：右上左下，对角线 */
+            /* border-top-left-radius: 左上; */
+            /* border-top-right-radius: 右上; */
+            /* border-bottom-left-radius: 左下; */
+            /* border-bottom-right-radius: 右下; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yuanxing"></div>
+    <div class="juxing"></div>
+    <div class="radious"></div>
+</body>
+
+</html>

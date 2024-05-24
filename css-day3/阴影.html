@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin:0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: #699;
+            margin: 100px auto;
+
+            /* 阴影 */
+            /* 第一个10px指的是 h-shadow 数值可以在x轴移动，数值为正在右边，数值为负在左边 */
+            /* 第二个10px指的是v-shadow 垂直阴影的位置数值为正在下边，数值为负在上边 */
+            /* 第三个10px指得是blur 模糊距离 虚实  为0就是纯实 */
+            /* 第四个10px指的是spread阴影尺寸阴影大小 */
+            /* inset 指改为内部阴影,默认为outset外部阴影 不可写outset */
+            /* rgba(x,x,x, .3) 百分之30透明 */
+            /* box-shadow: 10px 10px 10px 10px  rgba(0, 0, 0, .3)inset; */
+        }
+        /* 当鼠标经过div就会显示阴影 */
+        div:hover{
+            box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, .3);
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

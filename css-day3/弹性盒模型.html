@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: #555;
+            /* 开启弹性容器模型 */
+            /* 默认弹性盒里面的内容横向摆放 */
+            display: flex;
+            /*  row:横向从左到右排列(左对齐)，默认的排列方式
+                row-reverse:反转横向排列(右对齐，从后往前排，最后一项排在最前面
+                column:纵向排列
+                column-reverse:反转纵向排列，从后往前排，最后一项排在最上面 */
+            flex-direction: column;
+            /* 内容对齐(justify-content)属性应用在弹性容器上，把弹性项沿着弹性容器的主轴线(main axis)对齐语法
+            flex-start 弹性项目向行头紧挨着填充。这个是默认值。第一个弹性项的main-start外边距边线被放置在该行的main-start边线，而后续弹性项依次平齐摆放
+            flex-end 弹性项目向行尾紧挨着填充。第一个弹性项的main-end外边距边线被放置在该行的main-end边2线，而后续弹性项依次平齐摆放
+            center 弹性项目居中紧挨着填充。(如果剩余的自由空间是负的，则弹性项目将在两个方向上同时溢出) */
+            /*  flex-start 默认 垂直向上 
+                flex-end  垂直居下
+                center 垂直居中对齐  
+            */
+            justify-content:center;
+            /* 水平方向 */
+            align-items: center;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

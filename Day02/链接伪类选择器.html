@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 顺序为：link visited hover active */
+        a{
+            text-decoration: none;
+        }
+        /* 未访问过的链接 a:link */
+        a:link{
+            color: #333;
+        }
+        /* 已经访问链接 */
+        a:visited{
+            color: orange;
+        }
+        /* 鼠标移动到上面聚焦是显示 */
+        a:hover{
+            color: blue;
+        }
+        /* a:active 选择的是我们鼠标正在按下还没有弹起鼠标的那个链接 */
+        a:active{
+            color:green
+        }
+    </style>
+</head>
+<body> 
+    
+</body>
+<a href="#">未选择过</a>
+<a href="#">选择过</a>
+<a href="#">1选择过</a>
+<a href="www.baidu.com">12选择过</a>
+<a href="#">weizhi</a>
+</html>

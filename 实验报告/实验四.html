@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实验四</title>
+    <style>
+        h4{
+            font-weight: 400;
+        }
+        .box{
+            width: 500px;
+            margin-left: 100px;
+        }
+        .nav{
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h4>发表留言</h4>
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td ><input type="name"style="width:100px"></td>
+        </tr>
+        <tr>
+            <td>邮箱：</td>
+            <td><input type="email" style="width:300px"></td>
+        </tr>
+        <tr>
+            <td>分类：</td>
+            <td>
+               <input type="radio" name="fenlei" id="fenlei"><label for="fenlei">保密</label>
+                <input type="radio" name="fenlei" id="bufenlei"><label for="bufenlei">不保密</label>
+                &nbsp;&nbsp;留言类型:
+                <select>
+                    <option >   </option>
+                    <option >投诉</option>
+                    <option >咨询</option>
+                    <option >建议</option>
+                    <option >反馈</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>留言:</td>
+            <td><textarea style="width: 280px;height: 80px;"></textarea></td>
+        </tr>
+    </table>
+    <div style="width: 500px;">注:如果您的留言不便公开，请选择"保密”选项，提交后可凭系统反馈给您的留言编号、查询密码和您的姓名查询回复。
+    </div>
+    <div class="nav"> <input type="button" value="提交">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="清空">
+    </div>
+    <ul>
+        <li>请遵守国家有关法律、法规，尊重网上道德，承担一切因您的行为而直接或间接引起的法律责任.</li>
+        <li>本网站拥有管理笔名和留言的一切权利。</li>
+    </ul>
+    </div>
+</body>
+</html>
