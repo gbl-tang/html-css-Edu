@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            /* 这个相对定位是来突出表现鼠标经过时第二种修改情况 */
+            position: relative;
+            
+            float: left;
+            width: 150px;
+            height: 200px;
+            list-style: none;
+            border: 1px solid red;
+            /* 修改每个li往左移动边框大小距离，使后面压住前面 */
+            margin-left: -1px;
+        }
+
+        ul li:hover {
+            /* 修改当鼠标移动上去的时候，显示完整的四个边框
+            如果盒子没有定位，则鼠标经过添加相对定位即可
+                因为上面修改了左移压住，所以需要改为相对定位
+            position: relative;
+            border: 1px solid orange; */
+            /* 如果盒子有定位的情况： 
+            利用z-index提高盒子的层级*/
+            z-index: 5;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="diyige">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>
