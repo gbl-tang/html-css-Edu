@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Demo</title>
+</head>
+
+<body>
+
+    <button onclick="showPrompt()">点击这里输入名字</button>
+
+    <script>
+        function showPrompt() {
+            // 弹出提示框，要求用户输入名字    
+            var name = prompt("请输入你的名字：", "");
+
+            // 如果用户点击了“取消”按钮或者没有输入名字，则退出函数
+            if (name == null || name == "") {
+                return;
+            }
+
+            // 弹出警告框，显示欢迎信息
+            alert(name + "，你好！");
+        }
+    </script>
+
+</body>
+
+</html>
