@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 修改提示文本颜色 */
+        input::placeholder{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- required提示不能为空 
+         placeholder表单的提示信息
+         autofocus 自动聚焦到表单
+         autocomplete 默认是on 键入时，提示之前键入的值
+         multiole 可以多选文件提交        
+    -->
+    <form action="">
+        <input type="search" name="sear" id="" required="required" placeholder="tang" autofocus="autofocus" autocomplete="on">
+        <input type="file" multiple="multiple">
+        <input type="submit" value="搜索">
+    </form>
+</body>
+</html>
