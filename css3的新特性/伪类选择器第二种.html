@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :nth-child(1) 会把所有的孩子都排列序号 */
+        /* 执行nth-child(1)的时候，先看nth-child(1),序号第一个，之后再去看前面的标签 */
+        section div:nth-child(1){
+            background-color: aqua;
+        }
+         /* :nth-child(1) 会把指定的标签的孩子排列序号 */
+        /* 执行nth-child(1)的时候，先看nth-child(1),序号第一个，之后再去看前面的标签 */
+        section div:nth-of-type(1){
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>老大</p>
+        <div>老二</div>
+        <div>老三</div>
+    </section>
+</body>
+</html>

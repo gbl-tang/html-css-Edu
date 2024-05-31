@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 10px solid red ;
+            padding: 15px;
+            /* 利用盒子模型 box-sizing : border-box  盒子的最总大小就是width */
+            box-sizing: border-box;
+        }
+        p{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 10px solid red ;
+            padding: 15px;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div>盒子模型</div>
+    <p>盒子模型</p>
+</body>
+</html>

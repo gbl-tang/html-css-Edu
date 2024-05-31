@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            width:400px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* 伪元素选择器一定要有  content:'' */
+        /* 伪元素选择器权重是1 */
+        div::before{
+            /* 想要改变大小样式，先从行内元素转换成块 */
+            display: inline-block;
+            content: '伪元素选择器';
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        div::after{
+            content: '学习';
+        }
+    </style>
+</head>
+<body>
+    <div> before和after </div>
+</body>
+</html>
